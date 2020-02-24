@@ -7,6 +7,8 @@
     <string name="descripcion_fruta">Escriba descripción de la fruta</string>
     <string name="cancelar">Cancelar</string>
     <string name="spinner_fruta">Eliga el tipo de fruta</string>
+    <string name="t_tulo">Título</string>
+    <string name="descripci_n">Descripción</string>
 
     <string-array name="tiposFrutas">
         <item>Tropical</item>
