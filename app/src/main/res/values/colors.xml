@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#2A75D5</color>
+
+    <color name="colorFrutaTropical">#2e7d32</color>
+    <color name="colorFrutaDelBosque">#c62828</color>
+    <color name="colorFrutaCitrica">#ef6c00</color>
+    <color name="colorFrutasSecas">#5d4037</color>
+</resources>

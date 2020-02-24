@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Act Catalogo de Frutas</string>
+    <string name="tituloToolbar">Catálogo de frutas</string>
+    <string name="subtituloToolbar">Tropicales, del Bosque, Cítricas y Secas</string>
+    <string name="agregar">Agregar</string>
+    <string name="nombre_fruta">Escriba nombre de la fruta</string>
+    <string name="descripcion_fruta">Escriba descripción de la fruta</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="spinner_fruta">Eliga el tipo de fruta</string>
+
+    <string-array name="tiposFrutas">
+        <item>Tropical</item>
+        <item>Del Bosque</item>
+        <item>Cítrica</item>
+        <item>Secas</item>
+    </string-array>
+</resources>

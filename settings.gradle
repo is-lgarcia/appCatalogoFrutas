@@ -1,0 +1,2 @@
+rootProject.name='Act Catalogo de Frutas'
+include ':app'
