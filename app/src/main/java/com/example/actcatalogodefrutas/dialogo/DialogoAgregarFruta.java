@@ -1,5 +1,6 @@
 package com.example.actcatalogodefrutas.dialogo;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -18,8 +19,6 @@ import androidx.fragment.app.DialogFragment;
 import com.example.actcatalogodefrutas.R;
 import com.example.actcatalogodefrutas.servicio.Fruta;
 
-import java.io.IOException;
-
 public class DialogoAgregarFruta extends DialogFragment {
 
     public static final String TAG = "dialogo_agregar";
@@ -32,12 +31,11 @@ public class DialogoAgregarFruta extends DialogFragment {
 
     private EditText editNombre, editDescripcion;
     private Spinner spinnerTiposFruta;
-    private Button btnAgregar, btnCancelar;
 
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.dialogo_agregar_fruta, null);
+        @SuppressLint("InflateParams") View view = LayoutInflater.from(getContext()).inflate(R.layout.dialogo_agregar_fruta, null);
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setTitle("Agregar Fruta");
         builder.setView(view);
@@ -45,8 +43,8 @@ public class DialogoAgregarFruta extends DialogFragment {
         editNombre = view.findViewById(R.id.edit_nombre_fruta);
         editDescripcion = view.findViewById(R.id.edit_descripcion_fruta);
         spinnerTiposFruta = view.findViewById(R.id.spn_tipos_frutas);
-        btnAgregar = view.findViewById(R.id.btn_agregar_fruta);
-        btnCancelar = view.findViewById(R.id.btn_cancelar);
+        Button btnAgregar = view.findViewById(R.id.btn_agregar_fruta);
+        Button btnCancelar = view.findViewById(R.id.btn_cancelar);
 
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
